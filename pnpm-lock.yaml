@@ -225,8 +225,8 @@ importers:
         specifier: 0.22.0
         version: 0.22.0
       cookie:
-        specifier: 0.4.1
-        version: 0.4.1
+        specifier: 0.7.0
+        version: 0.7.0
       cors:
         specifier: 2.8.5
         version: 2.8.5
@@ -848,7 +848,7 @@ importers:
         version: 0.5.12
       babel-plugin-react-compiler:
         specifier: '*'
-        version: 0.0.0-experimental-696af53-20240625
+        version: 0.0.0-experimental-58c2b1c-20241009
       busboy:
         specifier: 1.6.0
         version: 1.6.0
@@ -1156,7 +1156,7 @@ importers:
         version: 3.1.1
       ci-info:
         specifier: watson/ci-info#f43f6a1cefff47fb361c88cf4b943fdbcaafe540
-        version: https://codeload.github.com/watson/ci-info/tar.gz/f43f6a1cefff47fb361c88cf4b943fdbcaafe540
+        version: git+https://git@github.com:watson/ci-info.git#f43f6a1cefff47fb361c88cf4b943fdbcaafe540
       cli-select:
         specifier: 1.1.2
         version: 1.1.2
@@ -1185,8 +1185,8 @@ importers:
         specifier: 1.0.4
         version: 1.0.4
       cookie:
-        specifier: 0.4.1
-        version: 0.4.1
+        specifier: 0.7.0
+        version: 0.7.0
       cross-spawn:
         specifier: 7.0.3
         version: 7.0.3
@@ -5803,8 +5803,8 @@ packages:
     peerDependencies:
       '@babel/core': 7.22.5
 
-  babel-plugin-react-compiler@0.0.0-experimental-696af53-20240625:
-    resolution: {integrity: sha512-OUDKms8qmcm5bX0D+sJWC1YcKcd7AZ2aJ7eY6gkR+Xr7PDfkXLbqAld4Qs9B0ntjVbUMEtW/PjlQrxDtY4raHg==}
+  babel-plugin-react-compiler@0.0.0-experimental-58c2b1c-20241009:
+    resolution: {integrity: sha512-/DSwpfz7c1hK5dpxxlLxQJtvXCF3RjN3ZCaJ43NM4BEvzTpaS0C0jasXVBEUIFumBcdaoirFbfZkyk9htY+6Xw==}
 
   babel-plugin-react-compiler@0.0.0-experimental-c23de8d-20240515:
     resolution: {integrity: sha512-0XN2gmpT55QtAz5n7d5g91y1AuO9tRhWBaLgCRyc4ExHrlr7+LfxW+YTb3mOwxngkkiggwM8HyYsaEK9MqhnlQ==}
@@ -6230,8 +6230,8 @@ packages:
     resolution: {integrity: sha512-TdHqgGf9odd8SXNuxtUBVx8Nv+qZOejE6qyqiy5NtbYYQOeFa6zmHkxlPzmaLxWWHsU6nJmB7AETdVPi+2NBUg==}
     engines: {node: '>=8'}
 
-  ci-info@https://codeload.github.com/watson/ci-info/tar.gz/f43f6a1cefff47fb361c88cf4b943fdbcaafe540:
-    resolution: {tarball: https://codeload.github.com/watson/ci-info/tar.gz/f43f6a1cefff47fb361c88cf4b943fdbcaafe540}
+  ci-info@git+https://git@github.com:watson/ci-info.git#f43f6a1cefff47fb361c88cf4b943fdbcaafe540:
+    resolution: {commit: f43f6a1cefff47fb361c88cf4b943fdbcaafe540, repo: git@github.com:watson/ci-info.git, type: git}
     version: 2.0.0
 
   cipher-base@1.0.4:
@@ -6562,12 +6562,12 @@ packages:
     resolution: {integrity: sha512-+Hp8fLp57wnUSt0tY0tHEXh4voZRDnoIrZPqlo3DPiI4y9lwg/jqx+1Om94/W6ZaPDOUbnjOt/99w66zk+l1Xg==}
     engines: {node: '>= 0.6'}
 
-  cookie@0.4.1:
-    resolution: {integrity: sha512-ZwrFkGJxUR3EIoXtO+yVE69Eb7KlixbaeAWfBQB9vVsNn/o+Yw69gBWSSDK825hQNdN+wF8zELf3dFNl/kxkUA==}
-    engines: {node: '>= 0.6'}
-
   cookie@0.5.0:
     resolution: {integrity: sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==}
+    engines: {node: '>= 0.6'}
+
+  cookie@0.7.0:
+    resolution: {integrity: sha512-qCf+V4dtlNhSRXGAZatc1TasyFO6GjohcOul807YOb5ik3+kQSnb4d7iajeCL8QHaJ4uZEjCgiCJerKXwdRVlQ==}
     engines: {node: '>= 0.6'}
 
   cookiejar@2.1.2:
@@ -7786,11 +7786,13 @@ packages:
   eslint@7.24.0:
     resolution: {integrity: sha512-k9gaHeHiFmGCDQ2rEfvULlSLruz6tgfA8DEn+rY9/oYPFFTlz55mM/Q/Rij1b2Y42jwZiK3lXvNTw6w6TXzcKQ==}
     engines: {node: ^10.12.0 || >=12.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   eslint@8.56.0:
     resolution: {integrity: sha512-Go19xM6T9puCOWntie1/P997aXxFsOi37JIHRWI514Hc6ZnaHGKY9xFhrU65RT6CcBEzZoGG1e6Nq+DT04ZtZQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   eslint@9.7.0:
@@ -8004,6 +8006,7 @@ packages:
 
   faunadb@2.6.1:
     resolution: {integrity: sha512-n/aRPDqrE7Sor7qzNDvZHmM7nEw0wERZZPjXRx1sBS3+9mJAscFa4zOQMgbh+pTz8M3r6Djd3vxl11JLn3eSMA==}
+    deprecated: 'Fauna is decommissioning FQL v4. This driver is not compatible with FQL v10, the latest version. Fauna accounts created after August 21, 2024 must use FQL v10. Ensure you migrate existing projects to the official v10 driver by the v4 EOL date: https://github.com/fauna/fauna-js.'
 
   faye-websocket@0.11.3:
     resolution: {integrity: sha512-D2y4bovYpzziGgbHYtGCMjlJM36vAl/y+xUyn1C+FVx8szd1E+86KwVw6XvYSzOP8iMpm1X0I4xJD+QtUb36OA==}
@@ -20462,7 +20465,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-react-compiler@0.0.0-experimental-696af53-20240625:
+  babel-plugin-react-compiler@0.0.0-experimental-58c2b1c-20241009:
     dependencies:
       '@babel/generator': 7.2.0
       '@babel/types': 7.22.5
@@ -21023,7 +21026,7 @@ snapshots:
 
   ci-info@4.0.0: {}
 
-  ci-info@https://codeload.github.com/watson/ci-info/tar.gz/f43f6a1cefff47fb361c88cf4b943fdbcaafe540: {}
+  ci-info@git+https://git@github.com:watson/ci-info.git#f43f6a1cefff47fb361c88cf4b943fdbcaafe540: {}
 
   cipher-base@1.0.4:
     dependencies:
@@ -21391,9 +21394,9 @@ snapshots:
 
   cookie@0.4.0: {}
 
-  cookie@0.4.1: {}
-
   cookie@0.5.0: {}
+
+  cookie@0.7.0: {}
 
   cookiejar@2.1.2: {}
 
